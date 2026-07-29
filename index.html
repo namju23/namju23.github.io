@@ -10,14 +10,18 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="처음으로 이동">nj gogo</a>
+      <a class="brand" href="#home" aria-label="처음으로 이동">nj gogo</a>
       <nav aria-label="주요 메뉴">
+        <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
         <a href="#games">Games</a>
       </nav>
     </header>
-    <main id="top">
+    <main id="home">
       <section class="hero" aria-labelledby="hero-title">
         <p class="eyebrow">ANDROID · GALAXY · WI-FI</p>
         <h1 id="hero-title">안녕하세요, <span>nj</span>입니다.</h1>
@@ -28,15 +32,50 @@
         <h2 id="about-title">연결을 더 단단하게.</h2>
         <p>모바일 경험의 기반이 되는 연결성과 안정성을 고민합니다.</p>
       </section>
-      <section id="work" class="content-section" aria-labelledby="work-title">
-        <p class="eyebrow">WORK</p>
-        <h2 id="work-title">수많은 핸드폰 출시</h2>
+      <section id="projects" class="content-section" aria-labelledby="projects-title">
+        <p class="eyebrow">PROJECTS</p>
+        <h2 id="projects-title">수많은 핸드폰 출시</h2>
         <p>안드로이드 갤럭시 모바일 S/W 개발 경험을 바탕으로 제품 출시를 함께했습니다.</p>
+      </section>
+      <section id="experience" class="content-section" aria-labelledby="experience-title">
+        <p class="eyebrow">EXPERIENCE</p>
+        <h2 id="experience-title">Wi-Fi S/W Engineering</h2>
+        <p>삼성전자 Wi-Fi S/W 엔지니어로서 안정적인 모바일 연결 경험을 개발합니다.</p>
+      </section>
+      <section id="research" class="content-section" aria-labelledby="research-title">
+        <p class="eyebrow">RESEARCH</p>
+        <h2 id="research-title">연결을 더 단단하게.</h2>
+        <p>모바일 경험의 기반이 되는 연결성과 사용성을 꾸준히 탐구합니다.</p>
       </section>
       <section id="games" class="content-section games-placeholder" aria-labelledby="games-title">
         <p class="eyebrow">GAMES</p>
         <h2 id="games-title">심심해</h2>
-        <p>단순하고 직관적인 지렁이 게임을 준비하고 있습니다.</p>
+        <p>먹이를 먹고 길어지며, 랜덤하게 움직이는 적을 피하세요.</p>
+        <div class="game-panel">
+          <div class="game-stats" aria-live="polite">
+            <span>상태 <strong id="game-status">준비</strong></span>
+            <span>점수 <strong id="score">0</strong></span>
+            <span>최고 <strong id="high-score">0</strong></span>
+          </div>
+          <canvas id="game-canvas" width="480" height="360" aria-label="지렁이 게임 화면"></canvas>
+          <div class="game-actions">
+            <button id="start-game" type="button">시작</button>
+            <button id="pause-game" type="button" disabled>일시정지</button>
+            <button id="restart-game" type="button">재시작</button>
+          </div>
+          <div class="game-controls" aria-label="모바일 방향 버튼">
+            <button type="button" data-direction="up" aria-label="위로 이동">↑</button>
+            <button type="button" data-direction="left" aria-label="왼쪽으로 이동">←</button>
+            <button type="button" data-direction="down" aria-label="아래로 이동">↓</button>
+            <button type="button" data-direction="right" aria-label="오른쪽으로 이동">→</button>
+          </div>
+          <p class="game-help">방향키 또는 WASD로 이동 · P로 일시정지 · 먹이는 초록색, 적은 주황색입니다.</p>
+        </div>
+      </section>
+      <section id="contact" class="content-section" aria-labelledby="contact-title">
+        <p class="eyebrow">CONTACT</p>
+        <h2 id="contact-title">Keep in touch.</h2>
+        <p>이메일과 소셜 링크는 비공개로 유지합니다.</p>
       </section>
     </main>
     <footer>© <span id="year"></span> nj gogo</footer>
