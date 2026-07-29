@@ -25,6 +25,19 @@ h1 span { color: var(--accent); }
 h2 { font-size: clamp(2rem, 5vw, 4rem); }
 .hero > p:last-child, .content-section > p:last-child { max-width: 580px; color: var(--muted); }
 .content-section { border-top: 1px solid var(--line); padding: 5rem 0; }
+.section-visual { margin: 2rem 0 0; max-width: 720px; }
+.section-visual img { display: block; width: 100%; height: auto; border: 1px solid var(--line); border-radius: .5rem; background: var(--surface); }
+.visual-card { max-width: 420px; }
+.model-list { margin-top: 2rem; padding: 1.25rem; border: 1px solid var(--line); background: var(--surface); }
+.model-list h3 { margin: 1.25rem 0 .35rem; color: var(--accent); font-size: 1rem; }
+.model-list h3:first-child { margin-top: 0; }
+.model-list p { margin: 0; color: var(--muted); }
+.model-list .source-note { margin-top: 1.25rem; font-size: .8rem; }
+.model-list a { color: var(--text); text-decoration: underline; text-underline-offset: .2em; }
+.experience-note { margin-top: 2rem; max-width: 720px; padding: 1.25rem; border-left: 3px solid var(--accent); background: var(--surface); }
+.experience-note h3 { margin: 0 0 .5rem; color: var(--accent); }
+.experience-note p { margin: .35rem 0; color: var(--muted); }
+.experience-note a { display: inline-block; margin-top: .7rem; color: var(--text); text-decoration: underline; text-underline-offset: .2em; }
 .games-placeholder { background: var(--surface); padding-inline: clamp(1.2rem, 4vw, 3rem); }
 .game-panel { max-width: 640px; margin-top: 2rem; border: 1px solid var(--line); background: var(--background); padding: 1rem; }
 .game-stats { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .8rem; margin-bottom: .8rem; color: var(--muted); font-size: .82rem; }
@@ -35,6 +48,24 @@ h2 { font-size: clamp(2rem, 5vw, 4rem); }
 .game-actions button { min-width: 44px; padding: .45rem 1rem; }.game-actions button:hover:not(:disabled), .game-controls button:hover { border-color: var(--accent); color: var(--accent); }.game-actions button:disabled { cursor: not-allowed; opacity: .45; }.game-actions button:focus-visible, .game-controls button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .game-controls { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; max-width: 240px; margin: 1rem auto 0; }.game-controls button { font-size: 1.2rem; touch-action: manipulation; }.game-controls button[data-direction="up"] { grid-column: 2; grid-row: 1; }.game-controls button[data-direction="left"] { grid-column: 1; grid-row: 2; }.game-controls button[data-direction="down"] { grid-column: 2; grid-row: 2; }.game-controls button[data-direction="right"] { grid-column: 3; grid-row: 2; }
 .game-help { margin: 1rem 0 0; color: var(--muted); font-size: .78rem; }
+.minesweeper-panel { max-width: 640px; margin-top: 2rem; border: 1px solid var(--line); background: var(--background); padding: 1rem; }
+.minesweeper-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.minesweeper-heading h3 { margin: 0; color: var(--accent); }
+.minesweeper-heading p { margin: .2rem 0 0; color: var(--muted); font-size: .82rem; }
+.minesweeper-heading button, .flag-toggle { min-height: 44px; padding: .45rem 1rem; border: 1px solid var(--line); border-radius: .35rem; background: var(--surface); color: var(--text); cursor: pointer; font: inherit; font-weight: 700; }
+.minesweeper-heading button:hover, .flag-toggle:hover { border-color: var(--accent); color: var(--accent); }
+.minesweeper-board { display: grid; grid-template-columns: repeat(9, 1fr); gap: 2px; max-width: 450px; margin-top: 1rem; }
+.mine-cell { aspect-ratio: 1; min-width: 0; border: 1px solid var(--line); background: var(--surface); color: var(--accent); cursor: pointer; font: inherit; font-weight: 800; touch-action: manipulation; }
+.mine-cell:hover, .mine-cell:focus-visible { border-color: var(--accent); outline: 2px solid var(--accent); outline-offset: 1px; }
+.mine-cell.revealed { background: #26302a; cursor: default; }
+.mine-cell.mine { background: #5b2b25; color: #ff8b5c; }
+.mine-cell[data-number="1"] { color: #8cc8ff; }.mine-cell[data-number="2"] { color: #b9f25a; }.mine-cell[data-number="3"] { color: #ff8b5c; }
+.flag-toggle { margin-top: 1rem; }
+.flag-toggle[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+.plane-panel { max-width: 640px; margin-top: 2rem; border: 1px solid var(--line); background: var(--background); padding: 1rem; }
+.plane-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }.plane-heading h3 { margin: 0; color: var(--accent); }.plane-heading p { margin: .2rem 0 0; color: var(--muted); font-size: .82rem; }.plane-heading strong { color: var(--accent); }
+#plane-canvas { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: #090d1b; }
+.plane-controls { display: grid; grid-template-columns: repeat(3, minmax(44px, 1fr)); gap: .5rem; max-width: 240px; margin: 1rem auto 0; }.plane-controls button { min-height: 44px; border: 1px solid var(--line); border-radius: .35rem; background: var(--surface); color: var(--text); cursor: pointer; font: inherit; font-weight: 800; touch-action: manipulation; }.plane-controls button:hover { border-color: var(--accent); color: var(--accent); }
 footer { border-top: 1px solid var(--line); padding: 2rem 0; color: var(--muted); font-size: .85rem; }
 @media (max-width: 767px) { body { width: 100%; } .site-header { align-items: flex-start; gap: .8rem; } }
 @media (min-width: 768px) and (max-width: 1439px) { body { max-width: 960px; } }

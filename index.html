@@ -31,16 +31,37 @@
         <p class="eyebrow">ABOUT</p>
         <h2 id="about-title">연결을 더 단단하게.</h2>
         <p>모바일 경험의 기반이 되는 연결성과 안정성을 고민합니다.</p>
+        <figure class="section-visual">
+          <img src="assets/connectivity-network.svg" alt="서로 연결된 기기를 표현한 네트워크 그래픽" />
+        </figure>
       </section>
       <section id="projects" class="content-section" aria-labelledby="projects-title">
         <p class="eyebrow">PROJECTS</p>
         <h2 id="projects-title">수많은 핸드폰 출시</h2>
         <p>안드로이드 갤럭시 모바일 S/W 개발 경험을 바탕으로 제품 출시를 함께했습니다.</p>
+        <div class="model-list" aria-label="삼성 갤럭시 주요 공개 모델 목록">
+          <h3>Galaxy S</h3>
+          <p>Galaxy S · S2 · S3 · S4 · S5 · S6 · S6 edge · S6 edge+ · S7 · S7 edge · S8 · S8+ · S9 · S9+ · S10e · S10 · S10+ · S10 5G · S20 · S20+ · S20 Ultra · S20 FE · S21 · S21+ · S21 Ultra · S21 FE · S22 · S22+ · S22 Ultra · S23 · S23+ · S23 Ultra · S23 FE · S24 · S24+ · S24 Ultra · S24 FE · S25 · S25+ · S25 Ultra · S25 Edge · S25 FE · S26 · S26+ · S26 Ultra</p>
+          <h3>Galaxy Z Fold</h3>
+          <p>Galaxy Fold · Z Fold2 · Z Fold3 · Z Fold4 · Z Fold5 · Z Fold6 · Z Fold Special Edition · Z Fold7 · Z Fold8 · Z Fold8 Ultra</p>
+          <h3>Galaxy Z Flip</h3>
+          <p>Galaxy Z Flip · Z Flip 5G · Z Flip3 · Z Flip4 · Z Flip5 · Z Flip6 · Z Flip7 · Z Flip7 FE · Z Flip8</p>
+          <p class="source-note">일반 공개 모델명 기준이며 지역·통신사·메모리·색상별 SKU는 제외했습니다. 2026-07-29 기준. <a href="https://www.samsung.com/uk/mobile-phone-buying-guide/best-samsung-s-series-phone/" target="_blank" rel="noopener noreferrer">Samsung S Series 안내</a> · <a href="https://news.samsung.com/global/samsung-galaxy-z-fold8-ultra-fold8-and-flip8foldables-perfect-for-every-way-of-living" target="_blank" rel="noopener noreferrer">Samsung Z Series 발표</a></p>
+        </div>
       </section>
       <section id="experience" class="content-section" aria-labelledby="experience-title">
         <p class="eyebrow">EXPERIENCE</p>
         <h2 id="experience-title">Wi-Fi S/W Engineering</h2>
         <p>삼성전자 Wi-Fi S/W 엔지니어로서 안정적인 모바일 연결 경험을 개발합니다.</p>
+        <div class="experience-note">
+          <h3>Wi-Fi Aware (NAN)</h3>
+          <p>Wi-Fi Aware는 주변 기기를 직접 발견하고 연결하는 Android 기반의 최신 연결 기술입니다.</p>
+          <p>구글·애플·마이크로소프트·인텔 등과 협업 중입니다. 구체적인 협업 내용은 기밀로 공개하지 않습니다.</p>
+          <a href="https://developer.android.com/develop/connectivity/wifi/wifi-aware?hl=en" target="_blank" rel="noopener noreferrer">Android Wi-Fi Aware 공식 문서</a>
+        </div>
+        <figure class="section-visual visual-card">
+          <img src="assets/wifi-pulse.svg" alt="Wi-Fi 신호가 퍼지는 모습을 표현한 그래픽" />
+        </figure>
       </section>
       <section id="research" class="content-section" aria-labelledby="research-title">
         <p class="eyebrow">RESEARCH</p>
@@ -70,6 +91,24 @@
             <button type="button" data-direction="right" aria-label="오른쪽으로 이동">→</button>
           </div>
           <p class="game-help">방향키 또는 WASD로 이동 · P로 일시정지 · 먹이는 초록색, 적은 주황색입니다.</p>
+        </div>
+        <div class="minesweeper-panel" aria-labelledby="minesweeper-title">
+          <div class="minesweeper-heading">
+            <div><h3 id="minesweeper-title">지뢰찾기</h3><p>쉬움 · 9×9 · 지뢰 10개</p></div>
+            <button id="minesweeper-restart" type="button">새 게임</button>
+          </div>
+          <p id="minesweeper-status" class="game-help" aria-live="polite">칸을 눌러 시작하세요.</p>
+          <div id="minesweeper-board" class="minesweeper-board" role="grid" aria-label="지뢰찾기 보드"></div>
+          <button id="minesweeper-flag" class="flag-toggle" type="button" aria-pressed="false">깃발 모드: 꺼짐</button>
+          <p class="game-help">칸을 눌러 열기 · 깃발 모드로 지뢰 표시 · 지뢰를 모두 피하고 안전한 칸을 여세요.</p>
+        </div>
+        <div class="plane-panel" aria-labelledby="plane-title">
+          <div class="plane-heading"><div><h3 id="plane-title">갤러그 스타일 비행기</h3><p>쉬운 기본 난이도 · 적을 격추하세요.</p></div><span>점수 <strong id="plane-score">0</strong></span></div>
+          <p id="plane-status" class="game-help" aria-live="polite">시작을 눌러 출격하세요.</p>
+          <canvas id="plane-canvas" width="480" height="360" aria-label="비행기 슈팅 게임 화면"></canvas>
+          <div class="game-actions"><button id="plane-start" type="button">시작</button><button id="plane-restart" type="button">재시작</button></div>
+          <div class="plane-controls" aria-label="비행기 게임 터치 버튼"><button type="button" data-plane-control="left" aria-label="왼쪽 이동">←</button><button type="button" data-plane-control="fire" aria-label="발사">●</button><button type="button" data-plane-control="right" aria-label="오른쪽 이동">→</button></div>
+          <p class="game-help">←/→ 또는 A/D로 이동 · Space로 발사 · 모바일 버튼을 사용할 수 있습니다.</p>
         </div>
       </section>
       <section id="contact" class="content-section" aria-labelledby="contact-title">

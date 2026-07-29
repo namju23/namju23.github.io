@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="title desc">
+  <title id="title">Wi-Fi device connectivity</title>
+  <desc id="desc">A mobile device and laptop communicating through a Wi-Fi access point.</desc>
+  <rect width="720" height="300" rx="20" fill="#15191e"/>
+  <g fill="none" stroke="#b9f25a" stroke-linecap="round">
+    <path d="M278 104a120 120 0 0 1 164 0" stroke-width="10" opacity=".35"/>
+    <path d="M308 136a76 76 0 0 1 104 0" stroke-width="12" opacity=".65"/>
+    <path d="M340 169a34 34 0 0 1 40 0" stroke-width="14"/>
+  </g>
+  <g fill="#0b0d10" stroke="#f3f5f6" stroke-width="4">
+    <rect x="80" y="92" width="128" height="116" rx="14"/>
+    <rect x="512" y="94" width="128" height="84" rx="10"/>
+    <path d="M492 193h168l-18 14H510z"/>
+    <rect x="306" y="176" width="108" height="50" rx="9"/>
+  </g>
+  <g fill="#b9f25a"><circle cx="144" cy="181" r="7"/><circle cx="576" cy="166" r="7"/><circle cx="360" cy="202" r="7"/></g>
+  <g stroke="#f3f5f6" stroke-width="3" opacity=".75"><path d="M105 116h78M105 132h48M535 116h82M535 132h54"/></g>
+</svg>

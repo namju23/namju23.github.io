@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" role="img" aria-labelledby="title desc">
+  <title id="title">Wi-Fi pulse</title>
+  <desc id="desc">A Wi-Fi symbol sending out concentric signal waves.</desc>
+  <rect width="420" height="260" rx="20" fill="#15191e"/>
+  <g fill="none" stroke="#b9f25a" stroke-linecap="round"><path d="M80 100a200 200 0 0 1 260 0" stroke-width="10" opacity=".35"/><path d="M125 140a130 130 0 0 1 170 0" stroke-width="12" opacity=".65"/><path d="M170 177a65 65 0 0 1 80 0" stroke-width="14"/></g>
+  <circle cx="210" cy="205" r="14" fill="#f3f5f6"/>
+</svg>
